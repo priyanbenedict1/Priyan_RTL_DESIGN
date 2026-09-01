@@ -1,0 +1,6 @@
+Time resolution is 1 ps
+Time = 0 | a = 0, b = 0 | y = 0
+Time = 10000 | a = 0, b = 1 | y = 1
+Time = 20000 | a = 1, b = 0 | y = 1
+Time = 30000 | a = 1, b = 1 | y = 1
+$finish called at time : 40 ns : File "D:/Priyan_Verilog/rtl_design/Basic_gates/or/tb/tb_or_gate.v" Line 44

@@ -1,0 +1,2 @@
+Breakpoint File Version 1.0
+27,true,"D:/Priyan_Verilog/Basic_gates/and/rtl/and_gate.v"

@@ -1,0 +1,48 @@
+$date
+   Tue Sep  1 09:17:43 2026
+$end
+
+$version
+  2026.1
+  $dumpfile ("or_gate.vcd") 
+$end
+
+$timescale
+  1ps
+$end
+
+$scope module tb_or_gate $end
+$var reg 1 ! a $end
+$var reg 1 " b $end
+$var wire 1 # y $end
+$scope module dut $end
+$var wire 1 $ a $end
+$var wire 1 % b $end
+$var wire 1 # y $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+
+#0
+$dumpvars
+0!
+0"
+0#
+0$
+0%
+$end
+
+#10000
+1"
+1#
+1%
+
+#20000
+1!
+0"
+1$
+0%
+
+#30000
+1"
+1%

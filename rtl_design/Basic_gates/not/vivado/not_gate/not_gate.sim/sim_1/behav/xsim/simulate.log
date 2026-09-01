@@ -1,0 +1,6 @@
+Time resolution is 1 ps
+Time | a | y
+-------------
+                   0 | 0 | 1
+               10000 | 1 | 0
+$finish called at time : 20 ns : File "D:/Priyan_Verilog/rtl_design/Basic_gates/not/tb/tb_not_gate.v" Line 44
