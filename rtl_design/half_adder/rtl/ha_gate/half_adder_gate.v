@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 01.09.2026 11:59:52
+// Create Date: 01.09.2026 14:24:37
 // Design Name: 
-// Module Name: nand_gatedf
+// Module Name: half_adder_gate
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,11 +20,14 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module nand_gatedf(
-      input a,
+module half_adder_gate_level (
+    input a,
     input b,
-    output y
+    output sum,
+    output carry
+);
 
-    );
-    assign y = ~(a & b);
+    xor (sum, a, b);     
+    and (carry, a, b);   
+
 endmodule

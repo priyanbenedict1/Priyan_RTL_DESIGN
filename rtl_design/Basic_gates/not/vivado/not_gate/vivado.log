@@ -163,3 +163,5 @@ set_property simulator_language Verilog [current_project]
 close [ open D:/Priyan_Verilog/rtl_design/universal_gates/nand/rtl/nand_dataflow/nand_gatedf.v w ]
 add_files D:/Priyan_Verilog/rtl_design/universal_gates/nand/rtl/nand_dataflow/nand_gatedf.v
 update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Sep  1 13:32:38 2026...
