@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 07.09.2026 11:58:25
+// Create Date: 24.09.2026 11:32:40
 // Design Name: 
-// Module Name: module mux_2to1_gate
+// Module Name: comparator_1bit
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,7 +20,16 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module module mux_2to1_gate(
+module comparator_1bit (
+    input A,
+    input B,
+    output Greater,
+    output Equal,
+    output Less
+);
 
-    );
+    assign Greater = A & ~B;
+    assign Equal   = ~(A ^ B);
+    assign Less    = ~A & B;
+
 endmodule
