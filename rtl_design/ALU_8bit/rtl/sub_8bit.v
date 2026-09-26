@@ -1,0 +1,100 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date: 26.09.2026 11:06:22
+// Design Name: 
+// Module Name: sub_8bit
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
+
+
+module sub_8bit(
+    input [ 7 : 0 ] a , 
+    input [ 7 : 0 ] b , 
+    input cin , 
+    output [ 15 : 0 ] y , 
+    output bo
+    );
+    
+    wire b0 , b1 , b2 , b3 , b4 , b5 , b6 ,b7 ;
+    
+    full_subtractor fs_0(
+        .a(a[0]), 
+        .b(b[0]), 
+        .cin(cin), 
+        .d(y[0]),
+        .bi(b0)
+    );
+    
+    full_subtractor fs_1(
+        .a(a[1]),
+        .b(b[1]), 
+        .cin(b0), 
+        .d(y[1]), 
+        .bi(b1)
+    );
+    
+    full_subtractor fs_2(
+        .a(a[2]), 
+        .b(b[2]),
+        .cin(b1), 
+        .d(y[2]),
+        .bi(b2)
+    );
+    
+    full_subtractor fs_3(
+        .a(a[3]), 
+        .b(b[3]),
+        .cin(b2), 
+        .d(y[3]), 
+        .bi(b3)
+    );
+    
+    full_subtractor fs_4(
+        .a(a[4]),
+        .b(b[4]), 
+        .cin(b3), 
+        .d(y[4]), 
+        .bi(b4)
+    );
+    
+    full_subtractor fs_5(
+        .a(a[5]),
+        .b(b[5]), 
+        .cin(b4), 
+        .d(y[5]), 
+        .bi(b5)
+    );
+    
+    full_subtractor fs_6(
+        .a(a[6]), 
+        .b(b[6]), 
+        .cin(b5), 
+        .d(y[6]), 
+        .bi(b6)
+    );
+    
+    full_subtractor fs_7(
+        .a(a[7]), 
+        .b(b[7]), 
+        .cin(b6),
+        .d(y[7]),
+        .bi(bo)
+    );
+    
+      assign y[15 : 8 ] = 8'b00000000; 
+     
+      
+endmodule
